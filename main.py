@@ -6,16 +6,12 @@ import tree
 import svg
 
 T = tree.BinaryTree()
-root = T.addNode(2)
-T.insert(root,-2)
-T.insert(root,3)
-T.insert(root,4)
-T.insert(root,4)
-T.insert(root,6)
-T.insert(root,3)
+root = T.addNode(0)
+for i in range(10):
+	T.insert(root,i)
 
-T.insert(root,7)
-T.printTree(root)
+
+#T.printTree(root)
 max = T.height(root,0)
 print("\n" + str(max))
-T.printSVG(root)
+#T.printSVG(root)

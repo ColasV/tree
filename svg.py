@@ -43,7 +43,6 @@ class SVGFile():
 			logging.error("Can't open the file" + str(self._name))
 		
 	def write_in_file(self):
-		
 		self._open()
 
 		self._File.write(self._Header)
