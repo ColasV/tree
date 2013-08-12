@@ -32,7 +32,7 @@ class SVGFile():
 		self._Content += "<line x1=\"" + str(x_1) + "\" y1=\"" + str(y_1) + "\" x2=\"" + str(x_2) + "\" y2=\"" + str(y_2) + "\" style=\"stroke:rgb(0,0,0);stroke-width:0.3\" />\n"
 		
 	def write_text(self,x_1,y_1,data):
-		self._Content += "<text x=\"" + str(x_1) + "\" y=\"" + str(y_1) + "\" style=\"stroke:rgb(0,0,0);stroke-width:0.2;font-size:4\" >" + str(data) + "</text>\n"
+		self._Content += "<text x=\"" + str(x_1) + "\" y=\"" + str(y_1) + "\" style=\"font-size:3\" >" + str(data) + "</text>\n"
 			
 
 	def _open(self):
