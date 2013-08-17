@@ -49,12 +49,12 @@ class BinaryTree():
    			right = self.height(root.right,height+1)
    			return(max(left,right))
 
-   	def printSVG(self,root):
+   	def printSVG(self,root,name):
    		# Need the height to define the size of the SVG file
    		# We know that there is a 2^n node at height n for binary tree
    		height = self.height(root,0)
 
-   		self.F = svg.SVGFile('tree.svg')
+   		self.F = svg.SVGFile(name)
    		self.F.write_header((2**height)*10,(2**height)*10)
    		self.createSVG(root,(2**height)*5,5,(2**height)*5,5)
    		self.F.write_footer()
@@ -75,6 +75,8 @@ class BinaryTree():
    				self.F.write_text(x_2-1,y_2,root.data)
    			self.createSVG(root.left,x_2,y_2,x_2-7,y_2+10)
    			self.createSVG(root.right,x_2,y_2,x_2+7,y_2+10)
+
+class 
 
 
 
