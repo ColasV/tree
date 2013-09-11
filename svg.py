@@ -40,7 +40,7 @@ class SVGFile():
 			self._File = open(self._name,'w')
 			logging.info("Successfully open : " + str(self._name))
 		except:
-			logging.error("Can't open the file" + str(self._name))
+			logging.error("Can't open the file!" + str(self._name))
 		
 	def write_in_file(self):
 		self._open()
